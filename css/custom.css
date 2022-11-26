@@ -1,0 +1,33 @@
+:root {
+    /* Colores primario y secundario personalizados*/
+    --bs-primary: #7a19f1;
+    --bs-secondary: #f2cf00;
+    --bs-primary-rgb: 122, 25, 241;
+    --bs-secondary-rgb: 242, 207, 0;
+  }
+
+.bg-primary-gradient{
+    background: linear-gradient(to bottom,#7a19f1,#332179);
+}
+
+.font-menu{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.font-menu:hover{
+    color: var(--bs-secondary)
+}
+
+.mh-100{
+    min-height: 100vh;
+}
+
+.boton-banner{
+    border-radius: 20px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.555);
+}
+
+.mh-25{
+    min-height: 25vh;
+}
