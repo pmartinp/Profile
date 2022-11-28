@@ -39,3 +39,33 @@ function menuNoTransition(){
     console.log(error);
   }
 }
+
+function validateName() {
+  let nameForm = document.getElementById("inputName");
+
+  if (nameForm.value.match(/[^a-zA-Z ]/)) {
+    nameForm.classList.add("is-invalid");
+  } else {
+    nameForm.classList.remove("is-invalid");
+  }
+}
+
+function validatePhone() {
+  let phone = document.getElementById("telephone");
+
+  if (!phone.value.match(/^\+?[1-9][0-9]{7,14}$/)) {
+    phone.classList.add("is-invalid");
+  } else {
+    phone.classList.remove("is-invalid");
+  }
+}
+
+function validateTextArea() {
+  let textArea = document.getElementById("message");
+
+  if (textArea.value.length<2) {
+    textArea.classList.add("is-invalid");
+  } else {
+    textArea.classList.remove("is-invalid");
+  }
+}
