@@ -25,6 +25,7 @@ function menuTransition(){
 function menuNoTransition(){
   try {
     let menu = document.getElementById("menu");
+    menu.classList.remove("bg-primary");
     menu.classList.remove("border-bottom");
     menu.classList.replace("py-2", "py-4");
   } catch (error) {
